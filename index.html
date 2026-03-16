@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade Currency Pairs in Global Markets | South Africa Online Trading</title>
+    <meta name="description" content="Start trading currency pairs, commodities, indices, and global markets with a fast, mobile-friendly platform tailored for South Africa." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1020;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .topbar {
+      background: #10172d;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    .logo span { color: #45d0ff; }
+    .hero {
+      background: linear-gradient(135deg, #0f1730 0%, #121d3d 45%, #0a1227 100%);
+      padding: 72px 0 56px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(69,208,255,0.14);
+      color: #8fe7ff;
+      border: 1px solid rgba(69,208,255,0.28);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 48px;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #d4dbef;
+      max-width: 640px;
+      margin-bottom: 26px;
+    }
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+    .btn-primary {
+      background: #2fd0ff;
+      color: #06111f;
+    }
+    .btn-primary:hover { transform: translateY(-1px); }
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.16);
+      color: #ffffff;
+      background: rgba(255,255,255,0.04);
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .stat {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 18px;
+    }
+    .stat strong {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+    .card {
+      background: #ffffff;
+      color: #101828;
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.28);
+    }
+    .card h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #475467;
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+    .form-group { margin-bottom: 14px; }
+    input, select {
+      width: 100%;
+      padding: 14px 14px;
+      border-radius: 12px;
+      border: 1px solid #d0d5dd;
+      font-size: 15px;
+      outline: none;
+    }
+    .form-note {
+      font-size: 12px;
+      color: #667085;
+      margin-top: 10px;
+    }
+    .card .btn-primary {
+      width: 100%;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .section {
+      padding: 72px 0;
+      background: #ffffff;
+      color: #111827;
+    }
+    .section-dark {
+      background: #0e152a;
+      color: #ffffff;
+    }
+    .section h2 {
+      font-size: 38px;
+      text-align: center;
+      margin-bottom: 14px;
+    }
+    .section-sub {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 38px;
+      color: #667085;
+      font-size: 18px;
+    }
+    .section-dark .section-sub { color: #c5d0e6; }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .feature {
+      background: #f8fafc;
+      border: 1px solid #eaecf0;
+      border-radius: 18px;
+      padding: 24px;
+    }
+    .feature h3 { margin-bottom: 10px; font-size: 22px; }
+    .feature p { color: #475467; }
+    .section-dark .feature {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .section-dark .feature p { color: #d7def0; }
+    .markets {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 10px;
+    }
+    .market-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 18px;
+      text-align: center;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .step {
+      background: #f8fafc;
+      border: 1px solid #eaecf0;
+      border-radius: 18px;
+      padding: 24px;
+    }
+    .step-number {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #0f172a;
+      color: #ffffff;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .risk-box {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 24px;
+      color: #d4dbef;
+      font-size: 15px;
+    }
+    .footer {
+      background: #09101f;
+      color: #98a2b3;
+      padding: 28px 0;
+      font-size: 14px;
+      text-align: center;
+    }
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-3,
+      .markets,
+      .steps,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+      h1 { font-size: 38px; }
+      .section h2 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="logo">Global<span>Trade</span></div>
+      <a href="https://deriv.partners/rx?ca=7150d8bae2dfb&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU60540" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Open Account</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">Built for South Africa</div>
+        <h1>Trade Currency Pairs and Explore Global Markets with a Smarter Platform</h1>
+        <p>
+          Access a streamlined online trading experience for currency pairs, indices, commodities and more.
+          Built for speed, mobile use, and a simple account opening journey for traders in South Africa.
+        </p>
+        <div class="cta-row">
+          <a href="https://deriv.partners/rx?ca=7150d8bae2dfb&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU60540" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Start Trading Now</a>
+          <a href="#features" class="btn btn-secondary">See Features</a>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong>Fast</strong>
+            Mobile-friendly platform experience
+          </div>
+          <div class="stat">
+            <strong>Flexible</strong>
+            Multiple market categories in one place
+          </div>
+          <div class="stat">
+            <strong>Simple</strong>
+            Easy onboarding for new users
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="signup">
+        <h3>Open Your Trading Account</h3>
+        <p>Get started with a simple direct access flow and continue to the secure registration page.</p>
+        <a href="https://deriv.partners/rx?ca=7150d8bae2dfb&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU60540" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="width:100%;text-align:center;">Continue to Registration</a>
+        <div class="form-note">You will be redirected to the registration page to complete account setup. Trading involves risk and may not be suitable for all investors.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <h2>Why Traders Choose This Platform</h2>
+      <p class="section-sub">A clean, conversion-focused landing page for paid traffic, designed to keep the message simple, clear, and mobile-friendly.</p>
+      <div class="grid-3">
+        <div class="feature">
+          <h3>Simple Interface</h3>
+          <p>Clean navigation and easy account access across desktop and mobile devices.</p>
+        </div>
+        <div class="feature">
+          <h3>Market Variety</h3>
+          <p>Explore currency pairs, commodities, indices, and additional global market opportunities.</p>
+        </div>
+        <div class="feature">
+          <h3>Fast Signup Flow</h3>
+          <p>Move from first click to registration through a short and focused account opening journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <h2>Markets You Can Explore</h2>
+      <p class="section-sub">A broad trading experience with access to multiple categories inside one platform environment.</p>
+      <div class="markets">
+        <div class="market-box">Currency Pairs</div>
+        <div class="market-box">Commodities</div>
+        <div class="market-box">Indices</div>
+        <div class="market-box">Global Markets</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Get Started in 3 Easy Steps</h2>
+      <p class="section-sub">A clear conversion path designed for ad traffic from South Africa.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Register Online</h3>
+          <p>Create your account with basic details using a mobile-friendly form.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Verify Your Profile</h3>
+          <p>Complete the account process and access the platform dashboard.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Access Global Markets</h3>
+          <p>Review available instruments and begin exploring market opportunities responsibly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <h2>Important Information</h2>
+      <div class="risk-box">
+        Trading involves risk and may not be appropriate for all investors. Market prices can move quickly, and losses may occur as well as gains. Before opening an account, make sure you understand the product features, fees, and the level of risk involved, and consider whether trading matches your financial objectives and experience.
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 GlobalTrade. All rights reserved. This page is for informational and promotional purposes only. Please review all product terms and risk information before opening an account.
+    </div>
+  </footer>
+</body>
+</html>
